@@ -1,0 +1,4 @@
+get-admin-conf.sh: fetches admin config for the current user. Requires sudo.
+get-kube-token-string.sh: prints the kubeadm join string
+install-docker-kubeadm.sh: install docker runtime and kubeadm 
+kube-bootstrap-flannel.sh: bootstrap a minimum-viable Kubernetes cluster
