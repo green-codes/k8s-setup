@@ -1,4 +1,5 @@
-get-admin-conf.sh: fetches admin config for the current user. Requires sudo.
-get-kube-token-string.sh: prints the kubeadm join string
-install-docker-kubeadm.sh: install docker runtime and kubeadm 
-kube-bootstrap-flannel.sh: bootstrap a minimum-viable Kubernetes cluster
+1. on all nodes, run (as root) install-docker-kubeadm.sh: install docker runtime and kubeadm 
+2. on the master node, run (as root) kube-bootstrap-flannel.sh: bootstrap a minimum-viable Kubernetes cluster
+3. on all worker nodes, run `sudo swapoff -a`
+4. run get-admin-conf.sh on the master node: fetches admin config for the current user. Requires sudo.
+5. run get-kube-token-string.sh on the master node: prints the kubeadm join string
